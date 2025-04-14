@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aimée - Expérience Culinaire Naturelle</title>
+  <style>
+    /* Réinitialisation et styles de base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Section Héros */
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('hero-image.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+    /* Superposition pour assombrir l'image et faciliter la lecture du texte */
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    header .content {
+      position: relative;
+      z-index: 2;
+      max-width: 90%;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.5em;
+    }
+
+    /* Sections générales */
+    section {
+      padding: 60px 20px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #556B2F;
+    }
+    .text-block {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      text-align: justify;
+    }
+    .text-block p {
+      margin-bottom: 20px;
+    }
+
+    /* Bouton de réservation */
+    .reservation-button {
+      display: inline-block;
+      background-color: #556B2F;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .reservation-button:hover {
+      background-color: #6B8E23;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9em;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        height: 70vh;
+      }
+      header h1 {
+        font-size: 2.5em;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      .section-title {
+        font-size: 2em;
+      }
+      .text-block {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Section Héros -->
+  <header>
+    <div class="content">
+      <h1>Aimée</h1>
+      <p>Une table suspendue entre ciel et forêt, où la nature s’invite dans chaque assiette.</p>
+    </div>
+  </header>
+
+  <!-- À propos -->
+  <section id="a-propos">
+    <h2 class="section-title">À propos</h2>
+    <div class="text-block">
+      <p>
+        Née d’un souvenir, d’un parfum d’enfance et du nom d’une grand-mère aimée, Aimée est une ode à la nature et au vivant. Dans ce refuge en altitude, chaque geste est guidé par la forêt, les saisons et la main de l’homme. Ici, le temps ralentit, et la cuisine devient émotion.
+      </p>
+    </div>
+  </section>
+
+  <!-- L'expérience -->
+  <section id="experience">
+    <h2 class="section-title">L’expérience</h2>
+    <div class="text-block">
+      <p>
+        Pas de carte figée. Chaque visite est une traversée sensible, une lecture de la forêt, du jardin et de l’instant. La cuisine d’Aimée puise dans le vivant : plantes sauvages, légumes du jardin, fleurs, racines… mais aussi des produits animaux choisis avec soin, tels qu’une volaille élevée localement, une viande maturée avec patience et un œuf ramassé à l’aube.
+      </p>
+      <p>
+        Chaque assiette raconte un lien. Rien n’est laissé au hasard. Tout est fait maison, pensé dans le respect du cycle naturel et en parfaite harmonie avec l’environnement.
+      </p>
+    </div>
+  </section>
+
+  <!-- Réservation -->
+  <section id="reservation">
+    <h2 class="section-title">Réserver une Table</h2>
+    <div class="text-block" style="text-align: center;">
+      <p>Nous vous accueillons sur réservation uniquement, pour préserver l’intimité et le rythme du lieu.</p>
+      <a href="#contact" class="reservation-button">Demander une réservation</a>
+    </div>
+  </section>
+
+  <!-- Contact / Accès -->
+  <section id="contact">
+    <h2 class="section-title">Contact / Accès</h2>
+    <div class="text-block">
+      <p><strong>Adresse :</strong> 123 Rue de la Forêt, Altitude, France</p>
+      <p><strong>Horaires :</strong> Du lundi au dimanche: 12h - 22h</p>
+      <p><strong>Téléphone :</strong> 01 23 45 67 89</p>
+      <p><strong>Email :</strong> contact@aimee.fr</p>
+      <p>
+        <strong>Carte :</strong> [Intégration Google Maps ici]
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Aimée - Tous droits réservés</p>
+    <p>Mentions légales</p>
+  </footer>
+</body>
+</html>
